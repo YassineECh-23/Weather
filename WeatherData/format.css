@@ -1,0 +1,51 @@
+
+*{
+  margin: 0 ;
+  padding: 0 ;
+}
+
+.contact-form .form-field{
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text{
+  display: block;
+  width: 25%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty +.label{
+  transform: translateY(-20px);
+}
+.contact-form .input-text:focus{
+  outline: none;
+}
+.contact-form .label{
+  position: absolute;
+  left: 20px;
+  bottom: 43px;
+  font-size: 18px ;
+  line-height: 26px;
+  font-weight: 400;
+  color: lightblack;
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn{
+  display: inline-block;
+  background:linear-gradient(250deg, #04edc287, #cb2d2d);
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}

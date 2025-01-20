@@ -1,0 +1,134 @@
+
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(Images/rain.jpg);
+  background-position: center;
+  background-size: cover ;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links{
+  flex: 1;
+  text-align: center;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+} 
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 62px;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: blanchedalmond;
+}
+.footer p{
+  position: fixed;
+  width: 100%;
+  text-align: white;
+  padding: 00px 0;
+  color: white;
+  bottom: 0;
+  line-height: 3;
+  left: 0;
+}
+/*-------------------climats page css ------------------*/
+.sub-header{
+  min-height: 250vh;
+  width: 100%;
+  background-size: cover ;
+  text-align: center;
+  color: #ebd3cb;
+  background:linear-gradient(250deg, #0a756187, #16184f);
+}
+table{
+  position: absolute;
+  z-index: 2;
+  margin-left: 360px;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: auto;
+  width: 60%;
+  overflow: scroll;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden ;
+  box-shadow: 0 2px 12px;
+  text-align: center;
+}
+th, td{
+  padding: 6px 9px;
+  /*background: yellow;*/
+}
+th{
+  /*background: yellow;*/
+}
+
+
+/*-------------------Ville page css ------------------*/
+.su-header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(Images/ville.jpg);
+  background-position: center;
+  background-size: cover ;
+  text-align: center;
+  color: #ebd3cb;
+}
+
+
+/*-------------------Date page css ------------------*/
+.s-header{
+  min-height: 180vh;
+  width: 100%;
+  background:linear-gradient(250deg, #7ce9d587, #000000);
+  background-position: center;
+  background-size: cover ;
+  text-align: center;
+  color: #ebd3cb;
+}
+
+
+
+

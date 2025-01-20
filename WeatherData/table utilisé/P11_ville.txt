@@ -1,0 +1,22 @@
+DROP TABLE IF EXISTS P11_ville;
+
+CREATE TABLE IF NOT EXISTS P11_ville (
+       ville_code INT auto_increment PRIMARY KEY, -- SERIAL en PostreSQL
+       ville_nom VARCHAR(80) NOT NULL,
+       ville_altitude INT,
+       ville_latitude DOUBLE(7,4),
+       ville_longitude DOUBLE(7,4)
+);
+
+
+
+
+-- insertion des P11_villes(ville_code, ville_nom, ville_altitude, ville_latitude, ville_longitude)
+
+INSERT INTO P11_ville(ville_nom, ville_altitude, ville_latitude, ville_longitude) VALUES
+('Paris', 78, 48.8567, 2.3519),
+('Marseille', 328, 43.2964, 5.3700),
+('Lyon', 232, 45.7578, 4.8322),
+('Toulouse', 200, 43.6044, 1.4439),
+('Le Havre', 5, 49.4900, 0.1000),
+('Nantes', 26, 47.2181, 1.5528);
